@@ -126,32 +126,10 @@
             return false;
         });    
 
-        //=====>  Countdown (Edit this with your own date yyyy/month/date)  <====
-        $("#bearr-countdown-item").countdown( "2023/09/24 8:05:10" , function (event) {
+        //=====>  Countdown (Edit this with your own date)  <====
+        $("#bearr-countdown-item").countdown( "2023/09/24 9:35:30" , function (event) {
             var $this = $(this).html(event.strftime('' + '<div class="countdown-col"><span class="countdown-time"> %-D </span> <span class="countdown-type"> Days </span></div> ' + '<div class="countdown-col"><span class="countdown-time"> %H </span> <span class="countdown-type">Hours </span></div>' + '<div class="countdown-col"><span class="countdown-time"> %M </span> <span class="countdown-type">Minutes </span></div>' + '<div class="countdown-col"><span class="countdown-time"> %S </span> <span class="countdown-type">Seconds </span></div>'));
         });
-        
-      /*  $(document).ready(function() {
-         
-          var targetDateTime = "2023/07/26 22:15:10";
-        
-         
-          $("#bearr-countdown-item").countdown(targetDateTime, function(event) {
-            
-        
-            if (event.elapsed) {
-              
-              var element = document.getElementById("bearr-countdown-item");
-              element.style.visibility = "hidden";
-              document.getElementById("bearr-countdown-item").innerHTML="HI Hello good morning";
-        
-              
-            } 
-          });
-        });*/
-        
-
-
 
         //Testimonials
          $(".testimonial-carousel").owlCarousel({
